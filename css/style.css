@@ -119,12 +119,12 @@ a:hover {
 
 .form-control::-webkit-input-placeholder {
   /*  Chrome, Safari, Opera  */
-  color: #b35454;
+  color: #ddd;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #c07e7e;
+  color: #ddd;
 }
 
 .form-control::-moz-placeholder {
@@ -801,10 +801,6 @@ a:hover {
   padding: 12px 0;
   width: 100%;
   margin: 0;
-}
-
-.google-map #map_canvas {
-  height: 400px;
 }
 
 .contact-info p {

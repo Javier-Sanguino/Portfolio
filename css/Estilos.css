@@ -1,3 +1,39 @@
+/* ===========btn hero down============== */
+.btn-hero {
+  position: relative;
+  overflow: hidden;
+}
+.btn-hero-text,
+.btn-hero-down {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+/* Estado inicial */
+.btn-hero-text {
+  transform: translateY(0);
+  opacity: 1;
+}
+.btn-hero-down {
+  position: absolute;
+  transform: translateY(150%);
+  opacity: 0;
+  inset: 0;
+}
+.btn-hero:hover .btn-hero-text {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+.btn-hero:hover .btn-hero-down {
+  transform: translateY(0);
+  opacity: 1;
+}
+.btn-hero-down i {
+  font-size: 24px;
+}
+/* ===========btn hero down============== */
+
 .about-title {
   margin-top: 90px;
 }
