@@ -114,16 +114,17 @@ a:hover {
 
 .form-control:focus {
   box-shadow: 0 0 0;
+  
 }
 
 .form-control::-webkit-input-placeholder {
   /*  Chrome, Safari, Opera  */
-  color: #ddd;
+  color: #b35454;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #ddd;
+  color: #c07e7e;
 }
 
 .form-control::-moz-placeholder {
@@ -1477,7 +1478,7 @@ a:hover {
 }
 .social-icon ul li a {
   background-color: #26292e;
-  border: 1px solid transparent;
+  border: none;
   display: block;
   height: 70px;
   width: 70px;
