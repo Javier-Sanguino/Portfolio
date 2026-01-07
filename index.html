@@ -648,20 +648,28 @@
 							<span>Bogotá - Colombia</span>
 						</div>
 						<div class="con-info clearfix">
-							<i class="bi bi-phone"></i>
-							<span>Phone: +57 322 681 6161</span>
+							<a href="mailto:ejemplo@dominio.com">
+								<i class="bi bi-mailbox-flag"></i>
+								<span>Email: fjse0505@gmail.com</span>
+							</a>
 						</div>
 						<div class="con-info clearfix">
-							<i class="bi bi-mailbox-flag"></i>
-							<span>Email: fjse0505@gmail.com</span>
+							<a href="https://wa.me/573226816161?text=Hola%20Javier,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20sobre%20un%20proyecto."
+								target="_blank">
+								<i class="bi bi-phone"></i>
+								<span>Phone: +57 322 681 6161</span>
+							</a>
 						</div>
+
 					</div>
 				</div> <!-- / End Contact Details -->
 
 				<!-- Contact Form -->
 				<div class="contact-form col-lg-6 mt-4 mt-lg-0 wow fadeInUp" data-wow-duration="500ms"
 					data-wow-delay="300ms">
-					<form id="contact-form" method="post" action="sendmail.php" role="form">
+					<form id="contact-form" name="formulario" data-netlify="true" method="POST" action="sendmail.php"
+						role="form">
+						<input type="hidden" name="form-name" value="formulario">
 						<div class="form-group">
 							<input type="text" placeholder="Nombres" class="form-control contacto-form" name="name"
 								id="name">
@@ -679,7 +687,7 @@
 								id="message"></textarea>
 						</div>
 						<div id="cf-submit">
-							<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+							<input type="submit" id="contact-submit" class="btn btn-transparent" value="submit">
 						</div>
 
 					</form>
@@ -691,21 +699,26 @@
 
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="row wow fadeInUp" data-wow-duration="500ms">
+			<div class="row">
 				<div class="col-lg-12">
 					<!-- Footer Social Links -->
 					<div class="social-icon">
 						<ul class="list-inline">
-							<li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+							<li class="list-inline-item"><a href="https://www.facebook.com/share/17s8xpckcD/"
+									target="_blank"><i class="bi bi-facebook"></i></a>
 							</li>
-							<li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+							<li class="list-inline-item"><a
+									href="https://wa.me/573226816161?text=Hola%20Javier,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20sobre%20un%20proyecto."
+									target="_blank"><i class="bi bi-whatsapp"></i></a>
 							</li>
-							<li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+							<li class="list-inline-item"><a href="https://www.instagram.com/javier_sanguino_espana"
+									target="_blank"><i class="bi bi-instagram"></i></a>
 							</li>
 							<li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
 							</li>
 							<i class="tf-ion-social-youtube"></i>
-							<li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-vimeo"></i></a>
+							<li class="list-inline-item"><a href="https://vimeo.com/user38962826?fl=pp&fe=sh"
+									target="_blank"><i class="bi bi-vimeo"></i></a>
 							</li>
 						</ul>
 					</div>

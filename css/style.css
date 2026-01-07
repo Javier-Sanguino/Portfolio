@@ -716,18 +716,6 @@ a:hover {
   margin-bottom: 25px;
 }
 
-.con-info {
-  margin-bottom: 20px;
-}
-
-.con-info i,
-.con-info span {
-  float: left;
-}
-
-.con-info span {
-  margin: -5px 0 0 15px;
-}
 
 .error {
   display: none;
@@ -1355,7 +1343,7 @@ a:hover {
 }
 .social-icon ul li:hover a i {
   transform: rotateY(0deg);
-  color: var(--morado-oscuro);
+  color: var(--text-secondary);
 }
 .social-icon ul li a {
   border: none;

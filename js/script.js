@@ -175,5 +175,15 @@ const observer = new IntersectionObserver(
     threshold: 0.2,
   }
 );
-
 reveals.forEach((el) => observer.observe(el));
+
+document.querySelectorAll(".navbar-collapse .nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    if (navbarCollapse.classList.contains("show")) {
+      const collapse = new bootstrap.Collapse(navbarCollapse);
+      collapse.hide();
+    }
+  });
+});
