@@ -1,7 +1,85 @@
+:root {
+  /* Fondos */
+  --bg-main: #171717; /* Fondo principal */
+  --bg-secondary: #262626; /* Cards */
+  --negro: #0a0a0a;
+  --negro-soft: rgb(10, 10, 10, 0.5);
+
+  /* Texto */
+  --text-primary: #e5e5e5; /* Títulos*/
+  --text-secondary: #a1a1a1; /* Párrafos */
+  --text-muted: #737373; /* Inputs */
+
+  /* Acento */
+  --morado: #540863;
+  --morado-claro: #a410c1;
+  --morado-oscuro: #380542;
+  --morado-sombra: #1d0b1f;
+}
+
+html {
+  background-color: var(--morado-sombra);
+}
+body {
+  background-color: var(--bg-main) !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navigation {
+  background-color: var(--negro-soft);
+  backdrop-filter: blur(5px);
+}
+.servicios {
+  background-color: var(--bg-secondary);
+}
+.footer {
+  background-color: var(--bg-secondary);
+}
+/* .about{
+  background-color: var(--bg-secondary);
+}
+.skills{
+background-color: var(--bg-secondary);
+}
+.contact-us{
+  background-color: var(--morado);
+}
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+}
+p {
+  color: var(--text-secondary);
+}
+i {
+  color: var(--text-muted);
+}
+a {
+  color: var(--text-primary);
+}
+a:hover {
+  color: var(--morado-claro);
+}
+.btn {
+  color: var(--text-primary);
+}
+.btn:hover {
+  color: var(--text-primary);
+}
+.btn-main:hover {
+  background: var(--morado-claro);
+}
+/* ================================= GENERALES ==================================== */
+
 /* ===========btn hero down============== */
 .btn-hero {
   position: relative;
   overflow: hidden;
+  background: transparent;
 }
 .btn-hero-text,
 .btn-hero-down {
@@ -31,18 +109,63 @@
 }
 .btn-hero-down i {
   font-size: 24px;
+  color: var(--text-primary);
 }
 /* ===========btn hero down============== */
 
+/* --------------ABOUT ME -------------------------------- */
 .about-title {
   margin-top: 90px;
 }
-.skill-card {
+
+/* ------------- SKILLS ------------------------------------ */
+.skills-main-container {
   display: flex;
   align-items: center;
-  /* background-color: rgb(30, 30, 30); */
+  justify-content: center;
+}
+.habilidades-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.habilidades-icon {
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.habilidades-icon i {
+  font-size: 32px;
+}
+.habilidades-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 4px;
+}
+.habilidades-text h3 {
+  margin: 0;
+  font-size: 24px;
+}
+.habilidades-text p {
+  font-size: 12px;
+  margin: 0;
+}
+.skill-card-container {
+  padding: 0 4px;
+}
+.skill-card {
+  background-color: var(--negro-soft);
+  display: flex;
+  align-items: center;
   border-radius: 12px;
-  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.skill-content h4 {
+  font-size: 18px;
 }
 .skill-icon {
   width: 120px;
@@ -63,28 +186,66 @@
 .skill-icon.davinci {
   transform: scale(0.7) !important;
 }
+
+/* ------------- SERVICIOS ------------------------------------ */
+.servicios-row {
+  align-items: stretch;
+}
+.servicios-card-container {
+  margin-bottom: 12px;
+}
+.servicios-card {
+  height: 100%;
+  background-color: var(--bg-main);
+}
+
+/* ------------- PORTAFOLIO ------------------------------------ */
+.portfolio.section {
+  display: none;
+}
+
+/* ------------- BLOG ------------------------------------ */
+#blog {
+  display: none;
+}
+
+/* ------------- CONTACTO ------------------------------------ */
 .contact-title {
   padding-top: 24px;
+}
+.con-info {
+  display: flex;
+  align-items: center;
+}
+.clearfix i,
+.clearfix span {
+  color: var(--text-muted);
+}
+.clearfix:hover i,
+.clearfix:hover span {
+  color: var(--text-primary) !important;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.contact-form .contacto-form {
+  border: none;
+  color: var(--text-primary);
+  border-bottom: 1px solid #4c4c4c;
+}
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+#contact-submit:hover {
+  background-color: var(--morado-claro);
+}
+
+/* ------------- FOOTER ------------------------------------ */
+.social-icon ul li a i {
+  color: var(--text-primary);
 }
 
 @media (max-width: 768px) {
   .skills-container {
     grid-template-columns: 1fr;
   }
-}
-
-.portfolio.section {
-  display: none;
-}
-
-#blog {
-  display: none;
-}
-
-.contact-form .contacto-form {
-  border: none;
-  border-bottom: 1px solid #383838;
-}
-#contact-submit:hover {
-  background-color: rgb(173, 180, 243);
 }
