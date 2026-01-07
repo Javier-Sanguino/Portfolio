@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
 :root {
+  /* Fondos */
+  --bg-main: #171717; /* Fondo principal */
+  --bg-secondary: #262626; /* Cards */
+  --negro: #0a0a0a;
+  --negro-soft: rgb(10, 10, 10, 0.5);
+
+  /* Texto */
+  --text-primary: #e5e5e5; /* Títulos*/
+  --text-secondary: #a1a1a1; /* Párrafos */
+  --text-muted: #737373; /* Inputs */
+
+  /* Acento */
   --morado: #540863;
   --morado-claro: #a410c1;
   --morado-oscuro: #380542;
@@ -21,7 +33,7 @@ h6 {
 }
 
 p {
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /*=================================================================
@@ -483,14 +495,27 @@ a:hover {
 }
 
 .hero-area {
+  background-image: url("../images/backgrounds/BLVCK\ PARIS\ PERFIL.png");
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFadeIn 1s ease-out forwards;
 }
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-area .block {
   text-align: center;
   z-index: 99;
@@ -551,7 +576,8 @@ a:hover {
 }
 .overlay::before {
   content: "";
-  background: rgba(0, 0, 0, 0.63);
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgb(29, 11, 31, 0.3);
   position: absolute;
   top: 0;
   right: 0;
