@@ -677,8 +677,6 @@ a:hover {
 .call-to-action-2 h2 {
   line-height: 1.5;
 }
-.call-to-action-2 p {
-}
 .call-to-action-2 .btn-main {
   margin-top: 20px;
 }
@@ -1506,9 +1504,6 @@ a:hover {
 #gallery-post,
 #post-thumb {
   overflow-x: hidden;
-}
-
-#post-thumb .owl-buttons {
 }
 
 .post-meta {
