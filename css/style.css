@@ -501,6 +501,7 @@ a:hover {
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
+  padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -532,7 +533,6 @@ a:hover {
 }
 .hero-area .block h1 {
   font-size: 90px;
-
   text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 20px;
@@ -715,7 +715,6 @@ a:hover {
 .contact-info p {
   margin-bottom: 25px;
 }
-
 
 .error {
   display: none;
