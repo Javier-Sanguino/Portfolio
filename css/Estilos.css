@@ -8,7 +8,7 @@
   /* Texto */
   --text-primary: #e5e5e5; /* Títulos*/
   --text-secondary: #a1a1a1; /* Párrafos */
-  --text-muted: #737373; /* Inputs */
+  --text-muted: #878787; /* Inputs */
 
   /* Acento */
   --morado: #540863;
@@ -381,8 +381,96 @@ a:hover {
 }
 
 /* ------------- PORTAFOLIO ------------------------------------ */
-.portfolio.section {
-  display: none;
+
+.section.portafolio {
+  background-color: var(--morado-sombra);
+}
+.title-portafolio {
+  padding-bottom: 30px;
+}
+.portafolio-tracks-container {
+  position: relative;
+}
+.portafolio-container {
+  overflow-x: hidden;
+}
+.portafolio-btn {
+  width: 260px;
+  padding: 18px 0;
+  background-color: var(--morado);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.portafolio-btn-icon i {
+  font-size: 24px;
+  color: var(--text-primary);
+}
+.portafolio-btn .portafolio-btn-icon {
+  position: absolute;
+  right: -50%;
+  display: flex;
+  align-items: center;
+  transition: 0.8s;
+}
+.portafolio-btn .portafolio-btn-text {
+  transform: translateX(0);
+  transition: transform 0.8s ease;
+}
+.portafolio-btn:hover .portafolio-btn-text {
+  transform: translateX(-200px);
+  transition: 0.8s;
+}
+.portafolio-btn:hover .portafolio-btn-icon {
+  transform: translateX(0);
+  right: 45%;
+}
+
+.portafolio-btn:hover {
+  background-color: var(--morado-claro);
+}
+.portafolio-track {
+  display: flex;
+  width: max-content;
+  -webkit-animation: scroll-left 20s linear infinite;
+  animation: scroll-left 20s linear infinite;
+  margin-bottom: 12px;
+}
+.portafolio-track.reverse {
+  -webkit-animation: scroll-right 27s linear infinite;
+  animation: scroll-right 27s linear infinite;
+}
+/* .portafolio-track:hover {
+  animation-play-state: paused;
+} */
+.portafolio img {
+  height: 300px;
+  width: auto;
+  margin-right: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* ------------- BLOG ------------------------------------ */

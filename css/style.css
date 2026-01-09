@@ -595,10 +595,10 @@ a:hover {
 }
 
 /*=================================================================
-  service us section
+  Servicios section
 ==================================================================*/
 .service .block {
-  padding: 30px;
+  padding: 12px;
   border-bottom: 2px solid transparent;
   transition: 0.5s all;
   margin-bottom: 20px;
@@ -618,7 +618,6 @@ a:hover {
   width: 160px;
   height: 92.38px;
   margin: 46.19px auto 60px;
-  padding: 20px 0;
   font-size: 70px;
   transform: translateZ(0px);
   transition-duration: 0.3s;
@@ -884,52 +883,6 @@ a:hover {
 }
 .portfolio-block .caption .search-icon i {
   line-height: 45px;
-}
-
-/*=================================================================
-  Services section
-==================================================================*/
-.service-block {
-  padding: 60px 20px;
-  border-left: 1px solid rgba(236, 239, 241, 0.07);
-  border-top: 1px solid rgba(236, 239, 241, 0.07);
-  margin-bottom: 40px;
-  box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3),
-    13px 13px 0 rgba(255, 255, 255, 0.7);
-}
-.service-block .service-icon {
-  margin-bottom: 10px;
-  font-size: 50px;
-}
-
-/*=================================================================
-  Services section 2
-==================================================================*/
-.service-2 .service-item {
-  border: 1px solid #eee;
-  margin-bottom: 30px;
-  padding: 50px 20px;
-  transition: all 0.3s ease 0s;
-}
-.service-2 .service-item:hover {
-  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
-}
-.service-2 .service-item:hover i {
-  color: var(--morado);
-}
-.service-2 .service-item i {
-  font-size: 30px;
-  display: inline-block;
-  background: var(--morado) none repeat scroll 0 0;
-  border-radius: 30px;
-  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
-
-  height: 55px;
-  line-height: 55px;
-  margin-bottom: 20px;
-  width: 55px;
-  transition: all 0.3s ease 0s;
 }
 
 /*=================================================================

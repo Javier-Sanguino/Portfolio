@@ -1,0 +1,49 @@
+:root {
+  /* Fondos */
+  --bg-main: #171717;
+  --bg-secondary: #262626;
+  --negro: #0a0a0a;
+  --negro-soft: rgb(10, 10, 10, 0.5);
+
+  /* Texto */
+  --text-primary: #e5e5e5; /* Títulos*/
+  --text-secondary: #a1a1a1; /* Párrafos */
+  --text-muted: #878787; /* Inputs */
+
+  /* Acento */
+  --morado: #540863;
+  --morado-claro: #a410c1;
+  --morado-oscuro: #380542;
+  --morado-sombra: #1d0b1f;
+}
+
+body {
+  background-image: url("../images/backgrounds/build-website.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.overlay-portafolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--negro-soft);
+  z-index: 0;
+}
+.contenido {
+  position: relative;
+  z-index: 9;
+}
+.contenido .title {
+  padding-top: 48px;
+}
+.contenido a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+}
