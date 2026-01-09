@@ -455,9 +455,9 @@ a:hover {
   height: auto;
   margin-top: 0;
 }
-.navigation .logo img {
+.logo img {
   height: auto;
-  width: 140px;
+  width: 60px;
 }
 .navigation .navigation-menu li a.active {
   color: var(--morado) !important;

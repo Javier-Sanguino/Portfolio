@@ -1,0 +1,30 @@
+.portfolio-gallery {
+  padding: 6rem 0;
+}
+
+.gallery {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 6px; /* o 0 si quieres más editorial */
+}
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+.gallery-item {
+  break-inside: avoid;
+  margin: 0 0 2rem 0;
+}
+.gallery {
+  column-gap: 2rem;
+}

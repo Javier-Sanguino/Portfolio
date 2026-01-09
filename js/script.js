@@ -187,3 +187,29 @@ document.querySelectorAll(".navbar-collapse .nav-link").forEach((link) => {
     }
   });
 });
+
+const form = document.getElementById("contact-form");
+const modal = document.getElementById("thank-you-modal");
+const close = document.getElementById("close-modal");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  fetch("/", {
+    method: "POST",
+    body: data,
+  })
+    .then(() => {
+      modal.style.display = "flex";
+      form.reset();
+    })
+    .catch(() => {
+      alert("Hubo un error, intenta de nuevo.");
+    });
+});
+
+close.addEventListener("click", () => {
+  modal.style.display = "none";
+});
