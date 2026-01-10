@@ -73,7 +73,7 @@ body {
   justify-content: end;
   padding: 12px;
   backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: 0.3s;
   border-radius: 6px;
@@ -161,9 +161,9 @@ footer {
   .gallery-item-overlay h3 {
     font-size: 1.5rem;
   }
-  .gallery-item-overlay p {
+  /* .gallery-item-overlay p {
     font-size: 0.8rem;
-  }
+  } */
 }
 
 /* Móvil */
@@ -175,6 +175,6 @@ footer {
     font-size: 1.25rem;
   }
   .gallery-item-overlay p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }

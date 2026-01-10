@@ -446,11 +446,9 @@ a:hover {
   -webkit-animation: scroll-right 27s linear infinite;
   animation: scroll-right 27s linear infinite;
 }
-/* .portafolio-track:hover {
-  animation-play-state: paused;
-} */
+
 .portafolio img {
-  height: 300px;
+  height: 400px;
   width: auto;
   margin-right: 12px;
   object-fit: cover;
