@@ -21,7 +21,7 @@ html {
   background-color: var(--morado-sombra);
 }
 body {
-  background-color: var(--bg-main) !important;
+  background-color: var(--bg-main);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .navigation {

@@ -5,37 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../images/logos/JS-logo.svg" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../plugins/animate-css/animate.css">
+
+    <link rel="stylesheet" href="../plugins/bootstrap/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/portafolio.css">
-    <title>Javier Sanguino España | Filmmaker & Video Editor</title>
+    <link rel="stylesheet" href="../css/Estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Portafolio | Javier Sanguino España</title>
 </head>
 
 <body>
+    <nav class="portafolio-logo">
+        <a class="navbar-brand logo" href="../index.html">
+            <img src="/images/logos/JS-logo.svg" alt="">
+        </a>
+    </nav>
+
     <section class="portfolio-gallery">
-        <div class="gallery">
-            <figure class="gallery-item">
-                <img src="../images/backgrounds/BLVCK PARIS PERFIL.png" alt="Proyecto 1">
-            </figure>
-            <figure class="gallery-item">
-                <img src="../images/backgrounds/fotografo_1.jpeg" alt="Proyecto 3">
-            </figure>
-            <figure class="gallery-item">
-                <img src="../images/backgrounds/bg-2.jpg" alt="Proyecto 2">
-            </figure>
-            <figure class="gallery-item">
-                <img src="../images/backgrounds/contact-bg.png" alt="Proyecto 3">
-            </figure>
-            <figure class="gallery-item">
-                <img src="../images/backgrounds/bg-2.jpg" alt="Proyecto 2">
-            </figure>
-            <figure class="gallery-item">
-                <img src="../images/backgrounds/bg-2.jpg" alt="Proyecto 2">
-            </figure>
-            <figure class="gallery-item">
-                <img src="../images/backgrounds/BLVCK PARIS PERFIL.png" alt="Proyecto 1">
-            </figure>
-            <a href="../index.html">Volver</a>
+        <!-- <h1 class="wow fadeInDown">Portafolio</h1> -->
+        <div class="portafolio-filtros">
+            <button class="btn filtro-btn active" data-filter="all">Todos</button>
+            <button class="btn filtro-btn" data-filter="corporativo">Corporativo</button>
+            <button class="btn filtro-btn" data-filter="fotografia">Fotografía</button>
+            <button class="btn filtro-btn" data-filter="comercial">Comerciales</button>
+            <button class="btn filtro-btn" data-filter="musical">Videoclips</button>
         </div>
+
+        <div class="gallery" id="portfolio">
+            <figure class="gallery-item wow fadeInUp" data-category="corporativo">
+                <img src="../images/backgrounds/BLVCK PARIS PERFIL.png" alt="Proyecto 1">
+                <div class="gallery-item-overlay">
+                    <h3>Título</h3>
+                    <p>Director<span class="separador">|</span>Guionista<span class="separador">|</span>Productor<span
+                            class="separador">|</span>Editor</p>
+
+                    <a href="#" class="btn btn-sm gallery-item-btn">Ver<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </figure>
+            <figure class="gallery-item wow fadeInUp" data-category="fotografia">
+                <img src="../images/backgrounds/fotografo_1.jpeg" alt="Proyecto 3">
+                <div class="gallery-item-overlay">
+                    <h3>Título</h3>
+                    <p>Director<span class="separador">|</span>Guionista<span class="separador">|</span>Productor<span
+                            class="separador">|</span>Editor</p>
+
+                    <a href="#" class="btn btn-sm gallery-item-btn">Ver<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </figure>
+            <figure class="gallery-item wow fadeInUp" data-category="comercial">
+                <img src="../images/backgrounds/bg-2.jpg" alt="Proyecto 2">
+                <div class="gallery-item-overlay">
+                    <h3>Título</h3>
+                    <p>Director<span class="separador">|</span>Guionista<span class="separador">|</span>Productor<span
+                            class="separador">|</span>Editor</p>
+
+                    <a href="#" class="btn btn-sm gallery-item-btn">Ver<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </figure>
+            <figure class="gallery-item wow fadeInUp" data-category="comercial">
+                <img src="../images/backgrounds/contact-bg.png" alt="Proyecto 3">
+                <div class="gallery-item-overlay">
+                    <h3>Título</h3>
+                    <p>Director<span class="separador">|</span>Guionista<span class="separador">|</span>Productor<span
+                            class="separador">|</span>Editor</p>
+
+                    <a href="#" class="btn btn-sm gallery-item-btn">Ver<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </figure>
+            <figure class="gallery-item wow fadeInUp" data-category="musical">
+                <img src="../images/backgrounds/bg-2.jpg" alt="Proyecto 2">
+                <div class="gallery-item-overlay">
+                    <h3>Título</h3>
+                    <p>Director<span class="separador">|</span>Guionista<span class="separador">|</span>Productor<span
+                            class="separador">|</span>Editor</p>
+
+                    <a href="#" class="btn btn-sm gallery-item-btn">Ver<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </figure>
+            <figure class="gallery-item wow fadeInUp" data-category="musical">
+                <img src="../images/backgrounds/bg-2.jpg" alt="Proyecto 2">
+                <div class="gallery-item-overlay">
+                    <h3>Título</h3>
+                    <p>Director<span class="separador">|</span>Guionista<span class="separador">|</span>Productor<span
+                            class="separador">|</span>Editor</p>
+
+                    <a href="#" class="btn btn-sm gallery-item-btn">Ver<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </figure>
+            <figure class="gallery-item wow fadeInUp" data-category="musical">
+                <img src="../images/backgrounds/BLVCK PARIS PERFIL.png" alt="Proyecto 1">
+                <div class="gallery-item-overlay">
+                    <h3>Título</h3>
+                    <p>Director<span class="separador">|</span>Guionista<span class="separador">|</span>Productor<span
+                            class="separador">|</span>Editor</p>
+
+                    <a href="#" class="btn btn-sm gallery-item-btn">Ver<i class="bi bi-chevron-right"></i></a>
+                </div>
+            </figure>
+        </div>
+        <a href="../index.html" class="btn btn-transparent">Volver</a>
     </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Footer Social Links -->
+                    <div class="social-icon">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/share/17s8xpckcD/"
+                                    target="_blank"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a
+                                    href="https://wa.me/573226816161?text=Hola%20Javier,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20sobre%20un%20proyecto."
+                                    target="_blank"><i class="bi bi-whatsapp"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/javier_sanguino_espana"
+                                    target="_blank"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+                            </li>
+                            <i class="tf-ion-social-youtube"></i>
+                            <li class="list-inline-item"><a href="https://vimeo.com/user38962826?fl=pp&fe=sh"
+                                    target="_blank"><i class="bi bi-vimeo"></i></a>
+                            </li>
+                        </ul>
+                    </div> <!--/. End Footer Social Links -->
+                    <!-- copyright -->
+                    <div class="copyright text-center">
+                        <a href="../index.html" class="logo">
+                            <img src="/images/logos/JS-logo.svg" alt="">
+                        </a>
+                        <p class="mt-3">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>. All Rights Reserved.
+                        </p>
+                        <p><span class="nombre">Javier Sanguino.</span> | Filmmaker &amp; Video editor.</p>
+                    </div>
+                    <!-- /copyright -->
+
+                </div> <!-- end col lg 12 -->
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </footer>
+
+    <!-- Main jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="../plugins/slick-carousel/slick.min.js"></script>
+    <!-- Magnific popup -->
+    <script src="../plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!-- wow.min Script -->
+    <script src="../plugins/wow/wow.min.js"></script>
+    <!-- Custom js -->
+    <script src="../js/script.js"></script>
+    <script src="../js/portafolio.js"></script>
 
 </body>
 

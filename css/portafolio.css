@@ -1,30 +1,180 @@
+:root {
+  /* Fondos */
+  --bg-main: #171717; /* Fondo principal */
+  --bg-secondary: #262626; /* Cards */
+  --negro: #0a0a0a;
+  --negro-soft: rgb(10, 10, 10, 0.5);
+
+  /* Texto */
+  --text-primary: #e5e5e5; /* Títulos*/
+  --text-secondary: #a1a1a1; /* Párrafos */
+  --text-muted: #878787; /* Inputs */
+
+  /* Acento */
+  --morado: #540863;
+  --morado-claro: #a410c1;
+  --morado-oscuro: #380542;
+  --morado-sombra: #1d0b1f;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-secondary);
+}
+
+.portafolio-logo {
+  text-align: center;
+}
+
+.portfolio-gallery h1 {
+  text-align: center;
+  padding: 10px 0;
+}
 .portfolio-gallery {
-  padding: 6rem 0;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gallery {
   column-count: 2;
-  column-gap: 2rem;
+  /* column-gap: 2px; */
+  padding: 20px 12px;
 }
 
 .gallery-item {
   break-inside: avoid;
-  margin-bottom: 2rem;
+  position: relative;
+  transition: 0.3s;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin-bottom: 20px;
 }
+.gallery-item.is-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+.gallery-item.is-gone {
+  display: none;
+}
+
 .gallery-item img {
   width: 100%;
   display: block;
-  border-radius: 6px; /* o 0 si quieres más editorial */
+  border-radius: 6px;
 }
-@media (max-width: 768px) {
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.gallery-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  transform: translateY(-5px);
+  border-radius: 6px;
+}
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+}
+.gallery-item-overlay h3 {
+  color: var(--text-primary);
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+.gallery-item-overlay p {
+  color: var(--text-secondary);
+  font-family: "Courier New", Courier, monospace;
+}
+.separador {
+  padding: 0 4px;
+  font-weight: bold;
+  color: var(--morado);
+}
+.gallery-item-btn {
+  width: 25%;
+  background-color: transparent;
+  border: 2px solid var(--text-primary);
+  transition: 0.3s;
+  color: var(--text-primary);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-item-btn i {
+  padding-left: 5px;
+}
+.gallery-item-btn:hover {
+  color: var(--morado-claro);
+  border: 2px solid var(--morado-claro);
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+.portafolio-filtros {
+  padding: 20px 12px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  background: none;
+  border: 2px solid var(--text-muted);
+  color: var(--text-secondary) !important;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.filtro-btn:hover {
+  color: var(--morado) !important;
+  border: 2px solid var(--morado-claro);
+}
+.filtro-btn.active {
+  color: var(--morado) !important;
+  border: 2px solid var(--morado-claro);
+}
+
+footer {
+  background-color: var(--bg-secondary);
+}
+
+/* -------------------------- Adaptabilidad ------------------------------ */
+/* Pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* .gallery {
+    column-count: 2;
+  } */
+  .gallery-item-overlay h3 {
+    font-size: 1.5rem;
+  }
+  .gallery-item-overlay p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Móvil */
+@media (max-width: 767px) {
   .gallery {
     column-count: 1;
   }
-}
-.gallery-item {
-  break-inside: avoid;
-  margin: 0 0 2rem 0;
-}
-.gallery {
-  column-gap: 2rem;
+  .gallery-item-overlay h3 {
+    font-size: 1.25rem;
+  }
+  .gallery-item-overlay p {
+    font-size: 0.6rem;
+  }
 }
