@@ -329,28 +329,25 @@ a:hover {
   align-items: center;
   border-radius: 12px;
   margin-bottom: 4px;
+  padding: 4px 0;
 }
 .skill-content h4 {
   font-size: 18px;
 }
 .skill-icon {
-  width: 120px;
-  height: 120px;
+  width: 80px;
   min-width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-right: 12px;
+  padding-left: 4px;
 }
 .skill-icon img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 100%;
 }
 .skill-icon.premiere img {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 .skill-icon.davinci {
-  transform: scale(0.7) !important;
+  transform: scale(1) !important;
 }
 .skill-card-container.premiere {
   animation-delay: 0.2s;
@@ -407,6 +404,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+box-shadow: 4px 5px 12px 8px rgba(0, 0, 0, .5);
 }
 .portafolio-btn-icon i {
   font-size: 24px;
@@ -438,13 +436,13 @@ a:hover {
 .portafolio-track {
   display: flex;
   width: max-content;
-  -webkit-animation: scroll-left 20s linear infinite;
-  animation: scroll-left 20s linear infinite;
+  /* -webkit-animation: scroll-left 30s linear infinite; */
+  animation: scroll-left 40s linear infinite;
   margin-bottom: 12px;
 }
 .portafolio-track.reverse {
-  -webkit-animation: scroll-right 27s linear infinite;
-  animation: scroll-right 27s linear infinite;
+  /* -webkit-animation: scroll-right 37s linear infinite; */
+  animation: scroll-right 45s linear infinite;
 }
 
 .portafolio img {
