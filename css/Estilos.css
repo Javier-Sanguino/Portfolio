@@ -380,10 +380,11 @@ a:hover {
 /* ------------- PORTAFOLIO ------------------------------------ */
 
 .section.portafolio {
-  background-color: var(--morado-sombra);
+  background-color: var(--bg-main);
+  padding: 20px 0;
 }
 .title-portafolio {
-  padding-bottom: 30px;
+  padding: 70px 0 30px;
 }
 .portafolio-tracks-container {
   position: relative;
@@ -404,7 +405,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-box-shadow: 4px 5px 12px 8px rgba(0, 0, 0, .5);
+  box-shadow: 4px 5px 24px 8px rgba(0, 0, 0, 0.5);
 }
 .portafolio-btn-icon i {
   font-size: 24px;
@@ -436,6 +437,7 @@ box-shadow: 4px 5px 12px 8px rgba(0, 0, 0, .5);
 .portafolio-track {
   display: flex;
   width: max-content;
+  height: 45vh;
   /* -webkit-animation: scroll-left 30s linear infinite; */
   animation: scroll-left 40s linear infinite;
   margin-bottom: 12px;
@@ -446,7 +448,14 @@ box-shadow: 4px 5px 12px 8px rgba(0, 0, 0, .5);
 }
 
 .portafolio img {
-  height: 400px;
+  height: auto;
+  width: auto;
+  margin-right: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.portafolio video {
+  height: auto;
   width: auto;
   margin-right: 12px;
   object-fit: cover;
